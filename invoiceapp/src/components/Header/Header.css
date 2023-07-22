@@ -1,0 +1,95 @@
+.header-container{
+    display: flex;
+    justify-content: space-between;
+    height: 59px;
+    width: 730px;
+    margin: 72px 0 65px 0;
+  }
+  .header-container .text{
+    line-height: 5px;
+  }
+  .header-container .text h1{
+    font-size: 32px;
+  }
+  .header-container .text p{
+    font-size: 12px;
+  }
+.header-container .actions{
+    display: flex;
+    align-items: center;
+    gap: 40px;
+   
+}
+.header-container .actions .btn{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    border-radius: 24px;
+    background: #7C5DFA;
+    cursor: pointer;
+    height: 48px;
+    width: 150px;
+}
+.header-container .actions .btn h3{
+    font-size: 12px;
+    color: #ffffff;
+}
+.header-container .actions button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 32px;
+    width: 32px;
+    background-color: #ffffff;
+    border: none;
+    border-radius: 50%;
+    color: #7C5DFA;
+}
+
+.filterbox{
+    position: relative;
+   
+}
+.filterbox .filterlist{
+    line-height: 0;
+    position: absolute;
+    left: -30px;
+    border-radius: 8px;
+    background: #FFF;
+    padding: 25px 86px 24px 24px;
+    box-shadow: 0px 10px 20px 0px rgba(72, 84, 159, 0.25);
+}
+
+.filterbox .filterhead{
+    display: flex;
+    align-items:center;
+    font-size: 12px;
+    gap: 8px;
+    cursor: pointer;
+}
+.filterbox .filterhead span{
+    position: relative;
+    top: 1px;
+    color: #7C5DFA;
+}
+.filter{
+    display: flex;
+    align-items: center;
+    gap: 17px;
+    cursor: pointer;
+}
+.filter .notchecked{
+border-radius: 2px;
+border: 1px solid #7C5DFA;
+background: #DFE3FA;
+padding: 5px;
+}
+.filter .checked{
+background-color: #7C5DFA;
+color: #ffffff;
+}
+.filter h3{
+font-size: 12px;
+font-weight: 700;
+letter-spacing: -0.25px;
+}

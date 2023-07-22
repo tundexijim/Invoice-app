@@ -1,0 +1,111 @@
+.itemlist-container{
+    margin-top: 2.4rem;
+}
+
+.itemlist-container h3{
+    font-size: 1.8rem;
+    line-height: 3.2rem;
+    letter-spacing: -0.375px;
+    color: #777F98;
+    margin-bottom: 1.6rem;
+    margin-top: 3.6rem;
+}
+
+.itemlist-container .itemsDiv{
+    display: inline-grid;
+    grid-template-columns: 5fr 2fr 3fr 3fr 1fr;
+    grid-template-rows: auto auto;
+    align-items: center;
+    grid-gap:1.6rem;
+    width: 100%;
+}
+
+.itemlist-container .itemsDiv>label{
+    margin-bottom: 0rem;
+}
+
+.itemlist-container .itemsDiv>div label{
+    display: none;
+}
+
+.itemlist-container .itemsDiv>div>div {
+    margin-bottom: 0;
+}
+
+.itemlist-container .itemsDiv>div>div>div{
+    display: none;
+}
+
+.itemlist-container .total input {
+    border: none;
+    padding: 1.65rem 0;
+}
+
+.itemlist-container .total span{
+    padding: 1.65rem 0;
+    font-size: 1.2rem;
+    font-weight: bold;
+    line-height: 1.5rem;
+    letter-spacing: -0.25px;
+    box-sizing: border-box;
+    text-align: left;
+}
+
+.itemlist-container .name {
+    grid-column: 1/2;
+}
+
+.itemlist-container .quantity {
+    grid-column: 2/3;
+}
+
+.price {
+    grid-column: 3/4;
+}
+
+.total {
+    grid-column: 4/5;
+    align-self: center;
+}
+
+.deleteIcon {
+    grid-column: 5/6;
+    align-self: center;
+}
+
+.deleteIcon span {
+    color: #888eb0;
+}
+.itemlist-container .inputDiv{
+    grid-row: 2/3;
+}
+
+.itemlist-container .iconSpan {
+    font-size: 2rem;
+    cursor: pointer;
+    position: relative;
+    right: 5px;
+}
+
+.itemlist-container .iconSpan:hover {
+    color: #EC5757;
+}
+
+.itemlist-container .addNewItem {
+     color: #7e88c3;
+     background-color: var(--button-edit-bg-color);
+     font-weight: bold;
+     font-size: 1.2rem;
+     line-height: 1.5rem;
+     text-align: center;
+     letter-spacing: -0.25px;
+     border-radius: 24px;
+     border: none;
+     padding: 17px 165px;
+     cursor: pointer;
+     margin-top: 1.8rem;
+}
+
+.itemlist-container .addNewItem:hover{
+     background-color: var(--button-edit-bg-color-hover);
+}

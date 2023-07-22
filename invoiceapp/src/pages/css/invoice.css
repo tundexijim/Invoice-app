@@ -1,0 +1,12 @@
+.invoice-container{
+    margin-left: 252px ;
+    margin-top: 64px;
+}
+.invoice-container .go-back{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    cursor: pointer;
+    font-size: 12px;
+    font-weight: 700;
+}

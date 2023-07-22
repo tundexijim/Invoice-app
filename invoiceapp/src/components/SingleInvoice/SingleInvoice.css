@@ -1,0 +1,52 @@
+.singleinvoice{
+    display: flex;
+    align-items: center;
+    gap: 50px;
+    justify-content: center;
+    background-color: #fff;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    cursor: pointer;
+    padding: 16px 32px;
+   
+}
+.singleinvoice .id{
+    font-weight: 700;
+    font-size: 12px;
+    min-width: 10%;
+    flex: 1
+}
+.singleinvoice .id>span{
+    color: #7E88C3;
+}
+.singleinvoice .due, .singleinvoice .clientname{
+color: #888EB0;
+font-size: 12px;
+font-style: normal;
+flex: 1;
+}
+.singleinvoice .total{
+font-size: 16px;
+font-weight: 700;
+letter-spacing: -0.8px;
+flex: 1;
+min-width: 100px;
+}
+.singleinvoice .status-container{
+    display: flex;
+    align-items: center;
+    font-size: 12px;
+    gap: 10px;
+    padding: 0 30px;
+    border-radius: 8px;
+    flex: 1;
+}
+.singleinvoice .status-container>hr{
+    width: 8px;
+    height: 8px;
+    border-radius: 8px;
+    border: none;
+}
+.singleinvoice .pointer{
+    color: #7C5DFA;
+}
