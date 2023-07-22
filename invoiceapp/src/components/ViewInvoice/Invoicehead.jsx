@@ -10,7 +10,7 @@ function Invoicehead({invoice}) {
     let color = [];
     color = getStatusColors(invoice?.status)
     const formstate = useFormState()
-    const [updateInvoiceStatus, {error, loading}] = useMutation(UPDATE_STATUS)
+    const [updateInvoiceStatus, { error }] = useMutation(UPDATE_STATUS)
     const showform = ()=> {
       formstate.open()
       document.body.style.overflow = "hidden";
@@ -40,7 +40,7 @@ function Invoicehead({invoice}) {
         <div className="buttons">
             <button className='edit-btn' disabled={invoice?.status==="Paid"} onClick={showform}>Edit</button>
             <button className='delete-btn' onClick={ () => modalState.open()}>Delete</button>
-            <button className={invoice?.status==="Draft"? "diabled-btn":"paid-btn"} onClick={onUpdate} disabled={invoice?.status==="Draft"}>{loading? "....": "Mark as Paid"}</button>
+            <button className={invoice?.status==="Draft"? "diabled-btn":"paid-btn"} onClick={onUpdate} disabled={invoice?.status==="Draft"}>Mark as Paid</button>
         </div>
     </div>
   )

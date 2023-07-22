@@ -20,7 +20,7 @@ function Invoicelist() {
     <div className='invoicelist'>
        <Header length = {data?.invoices.length}/>
        <div className="invoices">
-       {data?.invoices.map(invoice => <SingleInvoice key={invoice.id} invoice={invoice}/>)}
+       {data?.invoices && data?.invoices.map(invoice => <SingleInvoice key={invoice.id} invoice={invoice}/>)}
        </div>
      </div> 
       {formState && <InvoiceForm formType = "create"/>}
