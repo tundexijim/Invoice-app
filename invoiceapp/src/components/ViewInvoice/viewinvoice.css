@@ -50,9 +50,7 @@
     background: #7C5DFA;
     color: #fff;
 }
-.invoice-head .buttons .diabled-btn{
-    background: #7C5DFA;
-    color: #fff;
+.invoice-head .buttons .disabled-btn{
     cursor: not-allowed;
 }
 .invoice-bottom{

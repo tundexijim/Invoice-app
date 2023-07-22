@@ -38,9 +38,9 @@ function Invoicehead({invoice}) {
             </div>
         </div>
         <div className="buttons">
-            <button className='edit-btn' disabled={invoice?.status==="Paid"} onClick={showform}>Edit</button>
+            <button className={invoice?.status==="Paid" ? "edit-btn disabled-btn" : "edit-btn"} disabled={invoice?.status==="Paid"} onClick={showform}>Edit</button>
             <button className='delete-btn' onClick={ () => modalState.open()}>Delete</button>
-            <button className={invoice?.status==="Draft"? "diabled-btn":"paid-btn"} onClick={onUpdate} disabled={invoice?.status==="Draft"}>Mark as Paid</button>
+            <button className={invoice?.status==="Draft" ? "paid-btn disabled-btn" : "paid-btn"} onClick={onUpdate} disabled={invoice?.status==="Draft"}>Mark as Paid</button>
         </div>
     </div>
   )

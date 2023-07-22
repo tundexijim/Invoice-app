@@ -43,12 +43,13 @@
 
 .itemlist-container .total span{
     padding: 1.65rem 0;
-    font-size: 1.2rem;
+    font-size: 12px;
     font-weight: bold;
     line-height: 1.5rem;
     letter-spacing: -0.25px;
     box-sizing: border-box;
     text-align: left;
+    color: var(--main-primary-text-color);
 }
 
 .itemlist-container .name {
