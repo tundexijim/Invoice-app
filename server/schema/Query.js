@@ -4,7 +4,7 @@ const { db } = require('../data');
 
     exports.Query = {
       invoices: (_, {filter}) => {
-        let filteredInvoices = db.invoiceData;
+        let filteredInvoices = [...db.invoiceData].reverse();
             if (filter){
                 if(filter.status === "Paid")
                 filteredInvoices = filteredInvoices.filter(invoice => invoice.status === "Paid")

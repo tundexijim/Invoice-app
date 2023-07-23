@@ -15,6 +15,7 @@ function Invoicelist() {
 
   const {data, error, loading} = useInvoicelist(filter);
     console.log(data, error, loading)
+   
   return (
     <div>
     <div className='invoicelist'>

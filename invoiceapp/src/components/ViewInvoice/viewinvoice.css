@@ -15,6 +15,10 @@
     align-items: center;
     gap: 16px;
 }
+.invoice-head .status>span{
+    color: var(--main-secondary-text-color);
+    font-size: 12px;
+}
 .invoice-head .status-container{
     display: flex;
     align-items: center;
