@@ -1,8 +1,8 @@
 const express = require('express');
 const { ApolloServer } = require('apollo-server-express');
-const { typeDefs } = require('./schema/TypeDef')
-const {Query} = require('./schema/Query')
-const {Mutation} = require('./schema/Mutation')
+const { typeDefs } = require('./src/schema/TypeDef')
+const {Query} = require('./src/schema/Query')
+const {Mutation} = require('./src/schema/Mutation')
 async function startServer() {
   const app = express();
 
@@ -13,7 +13,7 @@ async function startServer() {
 
   await server.start();
 
-  server.applyMiddleware({path:"graphql", app });
+  server.applyMiddleware({ app });
 
   app.listen({ port: 4000 }, () => {
     console.log(`Server running at http://localhost:4000${server.graphqlPath}`);
