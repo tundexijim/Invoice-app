@@ -7,14 +7,15 @@ const {Mutation} = require('./src/schema/Mutation')
 async function startServer() {
   const app = express();
 
-  const server = new ApolloServer({ typeDefs, resolvers:{
+  const server = new ApolloServer({ typeDefs, 
+    resolvers:{
     Query,
     Mutation,
   }});
 
   await server.start();
 
-  server.applyMiddleware({ app });
+  server.applyMiddleware({path:"/graphql", app });
 
   app.listen({ port: 4000 }, () => {
     console.log(`Server running at http://localhost:4000${server.graphqlPath}`);
