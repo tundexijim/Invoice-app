@@ -3,6 +3,7 @@ const { ApolloServer } = require('apollo-server-express');
 const { typeDefs } = require('./src/schema/TypeDef')
 const {Query} = require('./src/schema/Query')
 const {Mutation} = require('./src/schema/Mutation')
+
 async function startServer() {
   const app = express();
 

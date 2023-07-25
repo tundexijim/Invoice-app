@@ -1,5 +1,6 @@
 const { db } = require('../data');
 const  { generateRandomId }  = require('../getid')
+
 exports.Mutation = {
 addInvoice: (_, {input}) => {
     const {
