@@ -7,7 +7,7 @@ import { BrowserRouter } from 'react-router-dom'
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 const client = new ApolloClient({
-  uri: 'http://localhost:4000/graphql',
+  uri: "https://invoice-app-nrt6-git-main-tundexijim.vercel.app/graphql",
   cache: new InMemoryCache({
     addTypename: false
   }),
